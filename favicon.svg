@@ -1,0 +1,48 @@
+<svg 
+  width="32" 
+  height="32" 
+  viewBox="0 0 100 100" 
+  fill="none" 
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Moon Digital Studio favicon -->
+  <defs>
+    <linearGradient id="moonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9BE8F1" />
+      <stop offset="70%" stop-color="#BBA6DD" />
+      <stop offset="100%" stop-color="#F794C3" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <radialGradient id="auraGradient" cx="50%" cy="50%" r="70%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="rgba(155, 232, 241, 0.15)" />
+      <stop offset="50%" stop-color="rgba(187, 166, 221, 0.1)" />
+      <stop offset="100%" stop-color="rgba(247, 148, 195, 0)" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Moon aura/glow effect -->
+  <circle 
+    cx="50" 
+    cy="52" 
+    r="45" 
+    fill="url(#auraGradient)" 
+  />
+  
+  <!-- Main moon shape - simplified for favicon -->
+  <path 
+    d="M50 15C29.5 15 13 31.5 13 52C13 72.5 29.5 89 50 89C65 89 75 81.4 80 70C65 85 35 80 31.5 55C28 30 35 18 45 15C40 15 35 15 50 15Z" 
+    fill="url(#moonGradient)" 
+    filter="url(#glow)"
+  />
+  
+  <!-- Simplified stars for favicon -->
+  <g>
+    <circle cx="25" cy="30" r="1.2" fill="white" />
+    <circle cx="65" cy="25" r="1.5" fill="white" />
+    <circle cx="75" cy="65" r="1.2" fill="white" />
+    <circle cx="30" cy="70" r="1" fill="white" />
+  </g>
+</svg>
